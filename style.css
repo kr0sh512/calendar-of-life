@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@300&display=swap');
 
 html {
-    font-family: 'Roboto Mono', monospace;
     font-size: 10px;
 }
 
@@ -35,11 +34,12 @@ main {
     /* background-color: white;
     border-width: 6px;
     border-style: dotted; */
-    background-color: rgb(120, 120, 120);
+    background-color: rgb(123, 227, 199);
     /*   заменить иконкой сердца?   */
 }
 
 .cell.number {
+    font-family: 'Roboto Mono', monospace;
     width: calc(80% / 50);
     display: flex;
     height: 100%;
