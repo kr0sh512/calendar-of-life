@@ -5,8 +5,7 @@ function CreateCalendar() {
     for (let i = 0; i < 73; ++i) {
         let number = document.createElement("div");
         number.classList.add("cell", "number");
-        number.innerHTML = ((i + 1) < 10) ? "&nbsp;" : ""; // &nbsp; ?
-        number.innerHTML += (i + 1).toString() + ".";
+        number.innerHTML = (i < 10 ? "&nbsp;" : "") + i.toString() + ".";
         let row = document.createElement("div");
         row.className = "row";
         row.appendChild(number);

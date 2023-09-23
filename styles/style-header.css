@@ -5,14 +5,19 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px rgb(66, 66, 66) solid;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
 }
 
 header div {
     margin: 1.25rem;
 }
 
-header div:nth-child(2) {
+header a:nth-child(2) {
     font-size: 4rem;
+    color: inherit;
 }
 
 header div.logo {
@@ -22,10 +27,10 @@ header div.logo {
     background-repeat: no-repeat;
 }
 
-header div.logo:nth-child(1) {
+header a:nth-child(1)>div.logo {
     background-image: url(../pics/info-48.png);
 }
 
-header div.logo:nth-child(3) {
+header a:nth-child(3)>div.logo {
     background-image: url(../pics/account-48.png);
 }
