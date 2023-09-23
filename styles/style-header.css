@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@300&display=swap');
+
 header {
     font-family: 'Open Sans', sans-serif;
     height: 7.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-bottom: 2px rgb(66, 66, 66) solid;
     position: sticky;
@@ -15,7 +17,7 @@ header div {
     margin: 1.25rem;
 }
 
-header a:nth-child(2) {
+header a:nth-child(1) {
     font-size: 4rem;
     color: inherit;
 }
@@ -25,12 +27,15 @@ header div.logo {
     width: 50px;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
-header a:nth-child(1)>div.logo {
-    background-image: url(../pics/info-48.png);
+header a:nth-child(2) {
+    position: absolute;
+    right: 0;
 }
 
-header a:nth-child(3)>div.logo {
-    background-image: url(../pics/account-48.png);
+header a:nth-child(2)>div.logo {
+    background-image: url(../pics/settings-96.png);
+
 }
