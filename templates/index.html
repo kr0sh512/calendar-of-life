@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Life Timer</title>
+    <link rel="icon" href="favicon.png" type="image/icon" sizes="any" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/clearcss.css" rel="stylesheet" type="text/css" />
+    <link href="styles/style.css?version=01" rel="stylesheet" type="text/css" />
+    <link href="styles/style-header.css?version=01" rel="stylesheet" type="text/css" />
+    <link href="styles/for_login.css?version=01" rel="stylesheet" type="text/css" />
+
+    <script> var db_birthday = "<?php echo $datebirth['birthday']; ?>"; </script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="">
+            <div>
+                <p>Lifer</p>
+            </div>
+        </a>
+        <a href="<?php echo $is_auth ? 'settings.php' : 'login.php' ; ?>">
+            <div>
+                <p>
+                    <?php echo $is_auth ? 'Settings' : 'Log in' ; ?>
+                </p>
+            </div>
+        </a>
+    </header>
+    <main>
+        <p id='alertDate'>Ваша дата рождения не задана!</p>
+    </main>
+    <footer>
+        Created by Kr0sh_512
+    </footer>
+</body>
+
+</html>
