@@ -3,7 +3,6 @@
 require_once dirname(__FILE__) . "/auth/config.php";
 require_once dirname(__FILE__) . "/auth/session.php";
 
-
 $error = '';
 // если нажата кнопка входа
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
