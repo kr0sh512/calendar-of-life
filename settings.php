@@ -1,7 +1,7 @@
 <?php
 
-require_once dirname(__FILE__) . "/templates/settings.html";
-exit;
+// require_once dirname(__FILE__) . "/templates/settings.html";
+// exit;
 
 session_start();
 
