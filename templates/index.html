@@ -9,22 +9,10 @@
     <link href="styles/clearcss.css" rel="stylesheet" type="text/css" />
     <link href="styles/style.css?version=01" rel="stylesheet" type="text/css" />
     <link href="styles/style-header.css?version=01" rel="stylesheet" type="text/css" />
+    <link href="styles/for_login.css?version=01" rel="stylesheet" type="text/css" />
+
+    <script> var db_birthday = "<?php echo $datebirth['birthday']; ?>"; </script>
     <script defer src="script.js"></script>
-    <style>
-        body::-webkit-scrollbar {
-            width: 10px;
-        }
-
-        body::-webkit-scrollbar-track {
-            background: #121212;
-        }
-
-        body::-webkit-scrollbar-thumb {
-            background-color: #772225;
-            border-radius: 100px;
-            border: 4px solid #121212;
-        }
-    </style>
 </head>
 
 <body>
@@ -34,7 +22,7 @@
                 <p>Lifer</p>
             </div>
         </a>
-        <a href="<?php echo $is_auth ? 'settings/index.html' : 'login.php' ; ?>">
+        <a href="<?php echo $is_auth ? 'settings.php' : 'login.php' ; ?>">
             <div>
                 <p>
                     <?php echo $is_auth ? 'Settings' : 'Log in' ; ?>
@@ -43,7 +31,7 @@
         </a>
     </header>
     <main>
-
+        <p id='alertDate'>Ваша дата рождения не задана!</p>
     </main>
     <footer>
         Created by Kr0sh_512

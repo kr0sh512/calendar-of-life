@@ -52,6 +52,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                 // если всё прошло успешно
                 if ($result) {
                     $error .= '<p class="success">Вы успешно зарегистрировались!</p>';
+                    $query = $db->prepare("SELECT * FROM users WHERE email = ?");
+                    $query->bind_param('s', $email);
+                    $query->execute();
+                    $row = $query->get_result()->fetch_assoc();
+                    $_SESSION["userid"] = $row['id'];
+                    $_SESSION["user"] = $row;
+                    // перенаправляем пользователя на внутреннюю страницу
+                    header("location: index.php");
+                    exit;
                     // если случилась ошибка
                 } else {
                     $error .= '<p class="error">Ошибка регистрации, что-то пошло не так.</p>';

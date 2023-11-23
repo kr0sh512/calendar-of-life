@@ -1,10 +1,16 @@
 html {
     font-size: 10px;
-    background-color: #121212;
+    background-color: var(--bs-body-bg);
 }
 
 main {
     margin: 20px;
+}
+
+#alertDate {
+    color: white;
+    font-size: 2rem;
+    margin: 2rem;
 }
 
 #calendar {
@@ -32,8 +38,6 @@ main {
 }
 
 .cell.date {
-    /* opacity: 0.1; */
-    /* color: black; */
     color: white;
     display: flex;
     justify-content: center;

@@ -1,5 +1,11 @@
 function CreateCalendar() {
     let date_of_birth = new Date("2006-06-16");
+
+    if (db_birthday !== '' && db_birthday !== 'NULL') {
+        date_of_birth = new Date(db_birthday);
+        alertDate.setAttribute("hidden", "");
+    }
+
     let count_of_weeks = (new Date() - date_of_birth) / 1000 / 60 / 60 / 24 / 7
 
     let calendar = document.createElement("div");

@@ -34,10 +34,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                     // стартуем новую сессию
                     $_SESSION["userid"] = $row['id'];
                     $_SESSION["user"] = $row;
-                    echo 'userid ' . $_SESSION["userid"] . ' ';
-                    echo 'user ' . $_SESSION["user"] . ' ';
-                    echo 'isset ' . isset($_SESSION["userid"]) . ' ';
-                    echo 'equal ' . ($_SESSION["userid"] != '') . ' ';
                     // перенаправляем пользователя на внутреннюю страницу
                     header("location: index.php");
                     exit;
